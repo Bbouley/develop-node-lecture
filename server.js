@@ -3,10 +3,11 @@ var http = require('http');
 
 //create a server
 var server = http.createServer(function(req, res){
-  console.log(req.url);
+  //console.log where the request is coming from
+  console.log(req.urlnom );
   //200 is the error message
   res.writeHead(200, {
-    //these lines are not needed to write to page, it will still write from line 12 down
+    //these lines are not needed to write to page, it will still write from line 13 down
     'content-type': 'text/html'
   });
   //writes on response, so a request is a refresh of the web page, then a response is what we do and define here.
